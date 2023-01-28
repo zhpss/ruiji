@@ -4,6 +4,10 @@ spring:
   application:
     name: ruiji
 #    应用的名称不写解释项目的名字
+  redis:
+    host: 192.168.0.102
+    port: 6379
+    database: 0
   datasource:
     druid:
       driver-class-name: com.mysql.cj.jdbc.Driver
