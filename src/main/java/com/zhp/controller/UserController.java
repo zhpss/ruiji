@@ -38,8 +38,8 @@ public class UserController {
     @PostMapping("/sendMsg")
     public R<String> sendMsg(@RequestBody User user,HttpSession  session ){
         //获取手机号
+        System.out.println("hello world");
         String phone = user.getPhone();
-
         if (StringUtils.isNotEmpty(phone)) {
             //生成随机的4位验证码
             String code = ValidateCodeUtils.generateValidateCode(4).toString();
